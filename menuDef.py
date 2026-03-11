@@ -1,4 +1,4 @@
-class MenuItem:
+class MenuItem: #By Quetzalli
     def __init__(self, name:str, location:str, calories:int, vegan:bool, vegetarian:bool, gluten_free:bool):
         self.name = name
         self.location = location
@@ -26,4 +26,4 @@ data = [MenuItem("cheeseburger", "Brunch", 550, False, False, False),
             MenuItem("glass noodles", "Poly Choice", 170, False, False, False),
             MenuItem("chick fill a nuggets", "Chick Fill A", 250, False, False, False),
             MenuItem("southwestern grilled chicken salad", "Balance Cafe", 250, False, False, True),
-            MenuItem("garlic fries", "Balance Cafe", 80, True, True, True)]
+            MenuItem("garlic fries", "Balance Cafe", 80, True, True, True)] #By Quetzalli

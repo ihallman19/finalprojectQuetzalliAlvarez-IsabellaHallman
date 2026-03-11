@@ -1,6 +1,7 @@
 from menuDef import MenuItem
 
 #gives you meals that are below or equal to a certain amount of calories you want to eat
+#By Quetzalli
 def healthy(menu:list[MenuItem], cal:int)->list[MenuItem]:
     health = []
     for i in menu:
@@ -10,6 +11,7 @@ def healthy(menu:list[MenuItem], cal:int)->list[MenuItem]:
     return health
 
 #gives you meals at a certain location that are below or equal to a certain amount of calories you want to eat
+#By Quetzalli
 def restaurant(menu:list[MenuItem], location:str, cal:int)->list[MenuItem]:
     health = []
     for i in menu:
@@ -19,6 +21,7 @@ def restaurant(menu:list[MenuItem], location:str, cal:int)->list[MenuItem]:
     return health
 
 #gives you meals at a certain location that are vegan
+#By Quetzalli
 def vegan(menu:list[MenuItem], locate:str)->list[MenuItem]:
     loc = []
     for i in menu:
@@ -28,6 +31,7 @@ def vegan(menu:list[MenuItem], locate:str)->list[MenuItem]:
     return loc
 
 #detects if there's missing calorie information
+#By Isabella
 def missing_cals(menu:list[MenuItem])->list[MenuItem]:
     missing = []
     for i in menu:
@@ -36,6 +40,7 @@ def missing_cals(menu:list[MenuItem])->list[MenuItem]:
     return missing
 
 #gives you meals that are vegetarian
+#By Isabella
 def vegetarian(menu:list[MenuItem])->list[MenuItem]:
     vegetarian_ = []
     for i in menu:
@@ -44,6 +49,7 @@ def vegetarian(menu:list[MenuItem])->list[MenuItem]:
     return vegetarian_
 
 #gives you meals that are gluten-free
+#By Isabella
 def gluten_free(menu:list[MenuItem])->list[MenuItem]:
     gluten_free_ = []
     for i in menu:
@@ -52,6 +58,7 @@ def gluten_free(menu:list[MenuItem])->list[MenuItem]:
     return gluten_free_
 
 #gives you the location with the healthiest meals
+#By Isabella
 def healthy_location(menu:list[MenuItem])->dict:
     d = {}
     for i in menu:
