@@ -1,6 +1,6 @@
 from menuDef import MenuItem
 
-#gives you meals that are below or equal to a certain amount of calories you want to eat
+#gives you the name of meals that are below or equal to a certain amount of calories you want to eat
 #By Quetzalli
 def healthy(menu:list[MenuItem], cal:int)->list[MenuItem]:
     health = []
@@ -10,7 +10,7 @@ def healthy(menu:list[MenuItem], cal:int)->list[MenuItem]:
                 health.append(i.name)
     return health
 
-#gives you meals at a certain location that are below or equal to a certain amount of calories you want to eat
+#gives you the name of meals at a certain location that are below or equal to a certain amount of calories you want to eat
 #By Quetzalli
 def restaurant(menu:list[MenuItem], location:str, cal:int)->list[MenuItem]:
     health = []
@@ -20,7 +20,7 @@ def restaurant(menu:list[MenuItem], location:str, cal:int)->list[MenuItem]:
                 health.append(i.name)
     return health
 
-#gives you meals at a certain location that are vegan
+#gives you the name of meals at a certain location that are vegan
 #By Quetzalli
 def vegan(menu:list[MenuItem], locate:str)->list[MenuItem]:
     loc = []
